@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Veliki-Raki</title>
+        <link rel="stylesheet" href="./css/fonts.css">
+        <link rel="stylesheet" href="/bootstrap-4.1.1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./css/style.css?v=3">
+        
+        <link rel="stylesheet" href="./css/jquery-ui.css">
+        <link rel="stylesheet" href="/resources/demos/style.css">
+        <link rel="icon" type="image/png" href="/favicon.ico">
+		
+        <script src="./js/jquery.js"></script>
+        <script src="./js/jquery-ui.js"></script>
+        
+        <script>
+            $(document).ready(function() {
+                var myAnimations = {
+                    show: { effect: "slideDown", duration: "slow" }
+
+                };
+                $("#tabs").tabs(myAnimations);
+				
+				$("#tabs a").each(function(){
+					$(this).click(function(){
+						$("#tabs a").removeClass('active');
+						$(this).addClass('active');
+					});
+				});
+				
+				$('#button').click(function() {
+					$("#block").css("display", "none;");
+				});
+				
+				$('.test').on('click', function(){
+                    var product = $(this).attr('data-product');
+                    $('.input-in-modal').val(product);
+                });
+				
+            });
+        </script>
+    </head>
+    <body>
+	
+        <div class="container center">
+            <div class="container hed">
+                <div class="row header">
+                    <div class="col-lg-5 col-xl-5 logo">
+                        <div class="col align-self-center logos"itemscope itemtype="http://schema.org/EducationalOrganization">
+                            <a href="#"><img src="images/logorak.png" itemprop="logo" alt="Все раки" title="Все раки"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 col-xl-7 titles">
+                        <div class="row">
+                            <div class="col-lg-4 col-xl-4 tel" itemscope
+                                 itemtype="http://schema.org/EducationalOrganization">
+                                <!--<p><a href="tel:+380672788338" itemprop="tel">+380 67 278 83 38</a></p>-->
+                                <p><a href="tel:+380932788338" itemprop="tel">+380 93 278 83 38</a></p>
+                                <!--<p><a href="tel:+380444656076" itemprop="tel">+380 44 465 60 76</a></p>-->
+                            </div>
+                            <div class="col-lg-4 col-xl-4 slog">
+                                <p>Замовляй зараз</p>
+                            </div>
+                            <div class="col-lg-4 col-xl-4 time">
+                                <p>Ми працюємо:<br> з 8-00 до 23-00</p>
+                            </div>
+                            <div class="col-lg-12 col-xl-12 align-self-center zagolovok">
+                                <h1>﻿Дiйсно ВЕЛИКІ ракi - перевiр та переконайся</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+            </div>
+            <div id="tabs">
+                <div class="container">
+                    <div class="row menu">
+                        <ul class="nav nav-pills col align-self-center">
+                            <li class="nav-item links">
+                                <a class="nav-link punkt active" href="#tabs-1">Живі раки</a>
+                            </li>
+                            <li class="nav-item links">
+                                <a class="nav-link punkt" href="#tabs-2">Варені раки</a>
+                            </li>
+                            <!--<li class="nav-item">-->
+                                <!--<a class="btn btn-warning test" href="#tabs-2" data-toggle="modal" data-target="#exampleModal">Замовити онлайн</a>-->
+                            <!--</li>-->
+                            <!--<li class="nav-item">-->
+                                <!--<a class="btn btn-warning" href="tel:+380672788338">Швидке замовлення</a>-->
+                            <!--</li>-->
+                        </ul>
+                    </div>
+                </div>
+                <div class="bloackcard" id="tabs-1">
+                    <div class="container">
+                        <div class="row cards">
+                            <div class="col-lg-4 col-xl-4 col-md-6 cart">
+                                <div class="shadow p-3 mb-5 bg-white rounded">
+                                    <div class="card" itemscope itemtype="http://schema.org/Product">
+                                        <div class="marker">
+											<div class="pic">
+                                            <img class="card-img-top focus" src="images/рак%20жив.png" alt="Card image cap" itemprop="image">
+                                                <div class="eff smoll"></div>
+											</div>
+                                            <p class="tip"><span itemprop="name">Живі</span></p>
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title" itemprop="name">Маленькі</h5>
+                                            <p><span>Розмір: </span>8-10 см</p>
+                                            <p><span>Кількість: </span>17-25 од/кг</p>
+                                            <p><span>Вага: </span>1 кг</p>
+                                            <p itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                                <span>Ціна: </span>
+                                                <span itemprop="price" content="300.00">300</span>
+                                                <span itemprop="priceCurrency" content="грн">грн</span>
+                                            </p>
+											<div class="card text-center">
+                                                <a href="tel:+380672788338" class="btn btn-warning topbot">Швидке замовлення</a>
+                                            </div>
+											<div class="card text-center">
+                                                <a href="#" class="btn btn-warning test" data-toggle="modal" data-target="#exampleModal" data-product="Маленькі">Замовити онлайн</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xl-4 col-md-6 cart">
+                                <div class="shadow p-3 mb-5 bg-white rounded">
+                                    <div class="card" itemscope itemtype="http://schema.org/Product">
+                                        <div class="marker">
+                                            <div class="pic">
+                                                <img class="card-img-top" src="images/рак%20жив.png"
+                                                     alt="Card image cap" itemprop="image">
+                                                <div class="eff sred"></div>
+                                            </div>
+                                            <p class="tip"><span itemprop="name">Живі</span></p>
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title" itemprop="name">Середні</h5>
+                                            <p><span>Розмір: </span>10-12 см</p>
+                                            <p><span>Кількість: </span>13-17 од/кг</p>
+                                            <p><span>Вага: </span>1 кг</p>
+                                            <p itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                                <span>Ціна: </span>
+                                                <span itemprop="price" content="500.00">500</span>
+                                                <span itemprop="priceCurrency" content="грн">грн</span>
+                                            </p>
+											<div class="card text-center">
+                                               <a href="tel:+380672788338" class="btn btn-warning topbot">Швидке замовлення</a>
+                                            </div>
+											<div class="card text-center">
+                                                <a href="#" class="btn btn-warning test" data-toggle="modal" data-target="#exampleModal" data-product="Середні">Замовити онлайн</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xl-4 col-md-6 cart">
+                                <div class="shadow p-3 mb-5 bg-white rounded">
+                                    <div class="card" itemscope itemtype="http://schema.org/Product">
+                                        <div class="marker">
+                                            <div class="pic">
+                                                <img class="card-img-top" src="images/рак%20жив.png"
+                                                     alt="Card image cap" itemprop="image">
+                                                <div class="eff vel"></div>
+                                            </div>
+                                            <p class="tip"><span itemprop="name">Живі</span></p>
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title" itemprop="name">Великі</h5>
+                                            <p><span>Розмір: </span>12-14 см</p>
+                                            <p><span>Кількість: </span>10-12 од/кг</p>
+                                            <p><span>Вага: </span>1 кг</p>
+                                            <p itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                                <span>Ціна: </span>
+                                                <span itemprop="price" content="600.00">600</span>
+                                                <span itemprop="priceCurrency" content="грн">грн</span>
+                                            </p>
+											<div class="card text-center">
+                                                <a href="tel:+380672788338" class="btn btn-warning topbot">Швидке замовлення</a>
+                                            </div>
+											<div class="card text-center">
+                                                <a href="#" class="btn btn-warning test" data-toggle="modal" data-target="#exampleModal" data-product="Великі">Замовити онлайн</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xl-4 offset-xl-2 col-md-6 cart">
+                                <div class="shadow p-3 mb-5 bg-white rounded">
+                                    <div class="card" itemscope itemtype="http://schema.org/Product">
+                                        <div class="marker">
+                                            <div class="pic">
+                                                <img class="card-img-top" src="images/рак%20жив.png"
+                                                     alt="Card image cap" itemprop="image">
+                                                <div class="eff dob"></div>
+                                            </div>
+                                            <p class="tip"><span itemprop="name">Живі</span></p>
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title" itemprop="name">Добірні</h5>
+                                            <p><span>Розмір: </span>14-16 см</p>
+                                            <p><span>Кількість: </span>8-10 од/кг</p>
+                                            <p><span>Вага: </span>1 кг</p>
+                                            <p itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                                <span>Ціна: </span>
+                                                <span itemprop="price" content="800.00">800</span>
+                                                <span itemprop="priceCurrency" content="грн">грн</span>
+                                            </p>
+											<div class="card text-center">
+                                                <a href="tel:+380672788338" class="btn btn-warning topbot">Швидке замовлення</a>
+                                            </div>
+											<div class="card text-center">
+                                                <a href="#" class="btn btn-warning test" data-toggle="modal" data-target="#exampleModal" data-product="Добірні">Замовити онлайн</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xl-4 col-md-6 cart">
+                                <div class="shadow p-3 mb-5 bg-white rounded">
+                                    <div class="card" itemscope itemtype="http://schema.org/Product">
+                                        <div class="marker">
+                                            <div class="pic">
+                                                <img class="card-img-top" src="images/рак%20жив.png"
+                                                     alt="Card image cap" itemprop="image">
+                                                <div class="eff elit"></div>
+                                            </div>
+                                            <p class="tip"><span itemprop="name">Живі</span></p>
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title" itemprop="name">Елітні</h5>
+                                            <p><span>Розмір: </span>16-18 см</p>
+                                            <p><span>Кількість: </span>4-7 од/кг</p>
+                                            <p><span>Вага: </span>1 кг</p>
+                                            <p itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                                <span>Ціна: </span>
+                                                <span itemprop="price" content="1100.00">1100</span>
+                                                <span itemprop="priceCurrency" content="грн">грн</span>
+                                            </p>
+											<div class="card text-center">
+                                                <a href="tel:+380672788338" class="btn btn-warning topbot">Швидке замовлення</a>
+                                            </div>
+											<div class="card text-center">
+                                                <a href="#" class="btn btn-warning test" data-toggle="modal" data-target="#exampleModal" data-product="Елітні">Замовити онлайн</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bloackcard" id="tabs-2">
+                    <div class="container">
+                        <div class="row cards">
+                            <div class="col-lg-4 col-xl-4 col-md-6 cart">
+                                <div class="shadow p-3 mb-5 bg-white rounded">
+                                    <div class="card" itemscope itemtype="http://schema.org/Product">
+                                        <div class="marker">
+                                            <div class="pic">
+                                                <img class="card-img-top" src="images/вар%20рак%20фото.png"
+                                                     alt="Card image cap" itemprop="image">
+                                                <div class="eff smoll"></div>
+                                            </div>
+                                            <p class="tip"><span itemprop="name">Варені</span></p>
+                                        </div>
+                                        <div class="card-body" itemprop="image">
+                                            <h5 class="card-title" itemprop="name">Маленькі</h5>
+                                            <p><span>Розмір: </span>8-10 см</p>
+                                            <p><span>Кількість: </span>17-25 од/кг</p>
+                                            <p><span>Вага: </span>1 кг</p>
+                                            <p itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                                <span>Ціна: </span>
+                                                <span itemprop="price" content="300.00">300+25</span>
+                                                <span itemprop="priceCurrency" content="грн">грн</span>
+                                            </p>
+											<div class="card text-center">
+                                                <a href="tel:+380672788338" class="btn btn-warning topbot">Швидке замовлення</a>
+                                            </div>
+											<div class="card text-center">
+                                                <a href="#" class="btn btn-warning test" data-toggle="modal" data-target="#exampleModal" data-product="Маленькі">Замовити онлайн</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xl-4 col-md-6 cart">
+                                <div class="shadow p-3 mb-5 bg-white rounded">
+                                    <div class="card" itemscope itemtype="http://schema.org/Product">
+                                        <div class="marker">
+                                            <div class="pic">
+                                                <img class="card-img-top" src="images/вар%20рак%20фото.png"
+                                                     alt="Card image cap" itemprop="image">
+                                                <div class="eff sred"></div>
+                                            </div>
+                                            <p class="tip"><span itemprop="name">Варені</span></p>
+                                        </div>
+                                        <div class="card-body" itemprop="description">
+                                            <h5 class="card-title" itemprop="name">Середні</h5>
+                                            <p><span>Розмір: </span>10-12 см</p>
+                                            <p><span>Кількість: </span>13-17 од/кг</p>
+                                            <p><span>Вага: </span>1 кг</p>
+                                            <p itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                                <span>Ціна: </span>
+                                                <span itemprop="price" content="500.00">500+25</span>
+                                                <span itemprop="priceCurrency" content="грн">грн</span></p>
+                                            <div class="card text-center">
+                                                <a href="tel:+380672788338" class="btn btn-warning topbot">Швидке замовлення</a>
+                                            </div>
+											<div class="card text-center">
+                                                <a href="#" class="btn btn-warning test" data-toggle="modal" data-target="#exampleModal" data-product="Середні">Замовити онлайн</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xl-4 col-md-6 cart">
+                                <div class="shadow p-3 mb-5 bg-white rounded">
+                                    <div class="card" itemscope itemtype="http://schema.org/Product">
+                                        <div class="marker">
+                                            <div class="pic">
+                                                <img class="card-img-top" src="images/вар%20рак%20фото.png"
+                                                     alt="Card image cap" itemprop="image">
+                                                <div class="eff vel"></div>
+                                            </div>
+                                            <p class="tip"><span itemprop="name">Варені</span></p>
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title" itemprop="name">Великі</h5>
+                                            <p><span>Розмір: </span>12-14 см</p>
+                                            <p><span>Кількість </span>10-12 од/кг</p>
+                                            <p><span>Вага: </span>1 кг</p>
+                                            <p itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                                <span>Ціна: </span>
+                                                <span itemprop="price" content="600.00">600+25</span>
+                                                <span itemprop="priceCurrency" content="грн">грн</span>
+                                            </p>
+											<div class="card text-center">
+                                                <a href="tel:+380672788338" class="btn btn-warning topbot">Швидке замовлення</a>
+                                            </div>
+											<div class="card text-center">
+                                                <a href="#" class="btn btn-warning test" data-toggle="modal" data-target="#exampleModal" data-product="Великі">Замовити онлайн</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xl-4 offset-xl-2  col-md-6 cart">
+                                <div class="shadow p-3 mb-5 bg-white rounded">
+                                    <div class="card" itemscope itemtype="http://schema.org/Product">
+                                        <div class="marker">
+                                            <div class="pic">
+                                                <img class="card-img-top" src="images/вар%20рак%20фото.png"
+                                                     alt="Card image cap" itemprop="image">
+                                                <div class="eff dob"></div>
+                                            </div>
+                                            <p class="tip"><span itemprop="name">Варені</span></p>
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title" itemprop="name">Добірні</h5>
+                                            <p><span>Розмір: </span>14-16 см</p>
+                                            <p><span>Кількість: </span>8-10 од/кг</p>
+                                            <p><span>Вага: </span>1 кг</p>
+                                            <p itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                                <span>Ціна: </span>
+                                                <span itemprop="price" content="800.00">800+25</span>
+                                                <span itemprop="priceCurrency" content="грн">грн</span>
+                                            </p>
+											<div class="card text-center">
+                                                <a href="tel:+380672788338" class="btn btn-warning topbot">Швидке замовлення</a>
+                                            </div>
+											<div class="card text-center">
+                                                <a href="#" class="btn btn-warning test" data-toggle="modal" data-target="#exampleModal" data-product="Добірні">Замовити онлайн</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xl-4 col-md-6 cart">
+                                <div class="shadow p-3 mb-5 bg-white rounded">
+                                    <div class="card" itemscope itemtype="http://schema.org/Product">
+                                        <div class="marker">
+                                            <div class="pic">
+                                                <img class="card-img-top" src="images/вар%20рак%20фото.png"
+                                                     alt="Card image cap" itemprop="image">
+                                                <div class="eff elit"></div>
+                                            </div>
+                                            <p class="tip"><span itemprop="name">Варені</span></p>
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title" itemprop="name">Елітні</h5>
+                                            <p><span>Розмір: </span>16-18 см</p>
+                                            <p><span>Кількість: </span>4-7 од/кг</p>
+                                            <p><span>Вага: </span>1 кг</p>
+                                            <p itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                                <span>Ціна: </span>
+                                                <span itemprop="price" content="1100.00">1100+25</span>
+                                                <span itemprop="priceCurrency" content="грн">грн</span>
+                                            </p>
+											<div class="card text-center">
+                                                <a href="tel:+380672788338" class="btn btn-warning topbot">Швидке замовлення</a>
+                                            </div>
+											<div class="card text-center">
+                                                <a href="#" class="btn btn-warning test" data-toggle="modal" data-target="#exampleModal" data-product="Елітні">Замовити онлайн</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title modall" id="exampleModalLabel">Оформити замовлення</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="form-group col-lg-12">
+                                    <label for="inputAddress">Номер телефону</label>
+                                    <input type="tel" class="form-control" id="inputAddress" placeholder="+3(8---)--- -- --">
+                                </div>
+                                <div class="form-group col-lg-12">
+                                    <label for="inputAddress2">Адреса доставки</label>
+                                    <input type="text" class="form-control" id="inputAddress2" placeholder="Район,вулиця">
+                                </div>
+                                <div class="form-row col-lg-12">
+                                    <div class="form-group col-md-6">
+                                        <label for="inputvubor">Ваш вибір</label>
+                                        <input type="text" value="" class="input-in-modal"/>
+                                    </div>
+                                    <div class="form-group col-md-6 .col-xl-6">
+                                        <label for="exampleFormControlSelect1">Кількість</label>
+                                        <select id="exampleFormControlSelect1" class="form-control">
+                                            <option selected>1 кг</option>
+                                            <option>2кг</option>
+                                            <option>3кг</option>
+                                            <option>4кг</option>
+                                            <option>5кг</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрити</button>
+                                <button type="button" class="btn btn-warning">Замовити</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bloack2">
+                <div class="dostavka">
+                    <div class=""></div>
+                </div>
+            </div>
+            <div class="zakaz">
+                <div class="container form">
+                    <form class="row">
+                        <div class="col-lg-7 col-xl-7">
+                            <div class="textp">
+                                <h2>ЧОМУ МИ?</h2>
+                                <p>
+                                    Ми продаємо тільки живих і свіжеприготованих раків. Найкраще співвідношення ціни та якості.
+                                    <br>
+                                    Час доставки замовлення : від 1 години-до 2 годин по місту Києву , передмістя розраховується індивідуально, з 8-00 до 23 -00,без вихідних.
+                                    <br>
+                                    Замовлення доставляється в харчовій,герметичній упаковці. Розрахунок : на картку "Приватбанку",або готівкою кур'єру,при отриманні замовлення.
+                                    <br>
+                                    Вартість доставки по Києву-90 грн, передмістя розраховується індивідуально.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-5 col-xl-5 row forms">
+                            <div class="form-group col-lg-12">
+                                <label for="inputEmail4">Email</label>
+                                <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                            </div>
+                            <div class="form-group col-lg-12">
+                                <label for="inputAddress">Номер телефону</label>
+                                <input type="tel" class="form-control" id="inputAddress" placeholder="+3(8---)--- -- --">
+                            </div>
+                            <div class="form-group col-lg-12">
+                                <label for="inputAddress2">Адреса доставки</label>
+                                <input type="text" class="form-control" id="inputAddress2" placeholder="Район,вулиця">
+                            </div>
+                            <div class="form-group col-lg-12">
+                                <label for="inputdate">Дата та час доставки</label>
+                                <input type="text" class="form-control" id="inputdate" placeholder="Дата та час доставки">
+                            </div>
+                            <div class="form-row col-lg-12">
+                                <div class="form-group col-md-6">
+                                    <label for="inputvubor">Ваш вибір</label>
+                                    <input type="text" class="form-control" id="inputvubor">
+                                </div>
+                                <div class="form-group col-md-6 .col-xl-6">
+                                    <label for="exampleFormControlSelect1">Кількість</label>
+                                    <select id="exampleFormControlSelect1" class="form-control">
+                                        <option selected>1 кг</option>
+                                        <option>2кг</option>
+                                        <option>3кг</option>
+                                        <option>4кг</option>
+                                        <option>5кг</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group col-lg-12">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                                    <label class="form-check-label" for="gridCheck">
+                                        Приймаю умови
+                                    </label>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-warning but">Замовити</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="footer container">
+            <div class="row foot">
+                <div class="col-lg-12 titl"><h4><hr>Дiйсно ВЕЛИКІ ракi - перевiр та переконайся<hr></h4></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 col-xl-4 align-self-center logo">
+                            <div class="logos" itemscope itemtype="http://schema.org/EducationalOrganization">
+                                <a href="#"><img src="images/logorak.png" alt="Все раки" title="Все раки" itemprop="logo"></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-xl-4">
+                            <div class="times footers">
+                                <p>Ми працюємо з 8-00 до 23-00</p>
+                                <p>ТІЛЬКІ СВІЖІ РАКИ</p>
+                                <p><a href="#">Наш сайт</a></p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-xl-4">
+                            <div class="tel footers" itemscope itemtype="http://schema.org/EducationalOrganization">
+                                <!--<p><a href="tel:+380672788338" itemprop="tel">+380 67 278 83 38</a></p>-->
+                                <p><a href="tel:+380932788338" itemprop="tel">+380 93 278 83 38</a></p>
+                                <!--<p><a href="tel:+380444656076" itemprop="tel">+380 44 465 60 76</a></p>-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+                integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+                crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+                integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+                crossorigin="anonymous"></script>
+    </body>
+</html>
