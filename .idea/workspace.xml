@@ -35,7 +35,7 @@
       <file leaf-file-name="ind.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ind.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
+            <state relative-caret-position="-220">
               <caret line="4" column="24" lean-forward="true" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
               <folding>
                 <marker date="1537944764000" expanded="true" signature="144:205" ph="..." />
@@ -179,16 +179,15 @@
       <workItem from="1536322905569" duration="6955000" />
       <workItem from="1536825092631" duration="1494000" />
       <workItem from="1537887661171" duration="1185000" />
-      <workItem from="1549554063792" duration="263000" />
+      <workItem from="1549554063792" duration="949000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49960000" />
+    <option name="totallyTimeSpent" value="50646000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="118" y="23" width="2131" height="1337" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Remote Host" order="3" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26663476" />
@@ -492,7 +491,7 @@
     <entry file="file://$USER_HOME$/Desktop/email/index.html" />
     <entry file="file://$PROJECT_DIR$/ind.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
+        <state relative-caret-position="-220">
           <caret line="4" column="24" lean-forward="true" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
           <folding>
             <marker date="1537944764000" expanded="true" signature="144:205" ph="..." />
